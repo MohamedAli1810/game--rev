@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  background-color: #272B30;
+  font-family: "Playwrite MX", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (min-width: 1400px) {
+    .navbar {
+        max-width: 1111px;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar{
+        max-width: 1000px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar{
+        max-width: 800px;
+    }
+}
+/* @media (min-width: 768px) {
+    .navbar{
+        max-width: 600px;
+    }
+} */
+/* @media (min-width: 576px) {
+    .navbar{
+        max-width: 400px;
+    }
+} */
+.navbar .container span{
+    font-size: 20px;
+    font-family: "Playwrite MX", cursive;
+    font-style: normal;
+    font-weight: 500;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+.navbar  {
+    position: sticky;
+    top: 0;
+    margin: -50px auto;
+    z-index: 99;
+    background-color: #3A497A;
+    border-radius: 20px;
+}
+.nav-item .nav-link {
+    padding: 10px;
+    font-size: 8px;
+    font-family: "Playwrite MX", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-item .nav-link.active, .nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+.hiver{
+    overflow: hidden;
+    background-color: #272B30;
+    border: 1px solid RGBA(0, 0, 0,0.3);
+    border-radius: 5px;
+    transition: all 1000ms;
+}
+.hiver:hover{
+    scale: 1.05;
+    transition: all 1000ms;
+    cursor: pointer;
+}
+.photo img{
+    filter: grayscale(90%);
+    transition: all 1000ms;
+}
+.hiver:hover img{
+    filter: grayscale(0%);  
+    transition: all 1000ms;
+}
+.caption h3, .caption p{
+    font-size: 10px;
+    font-weight: 500;
+}
+.caption p{
+    color: rgba(255, 255, 255, 0.5);
+    max-height: 30px;
+}
+.caption span{
+    font-size: 12px;
+    font-weight: 700;
+    background-color:  RGBA(13, 110, 253,0.3);
+    transition: all 1000ms;
+}
+.hiver:hover .caption span{
+    background-color:  RGBA(13, 110, 253,1);
+    transition: all 1000ms;
+}
+.footer-c{
+    border-top:1px solid RGBA(0, 0, 0,0.5)  ;
+}
+.caption .footer-c span{
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #32383e;
+}
+.hiver:hover .caption .footer-c span{
+    background-color:  #32383e;
+}
+.details header h1{
+    font-size: 28px;
+}
+.caption-s2 h3{
+    font-size: 28px;
+    font-weight: 500;
+}
+.caption-s2 p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.caption-s2 p span{
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #09c;
+    border: #09c 1px solid;
+    border-radius: 10px;
+}
+.caption-s2 .cp{
+    font-size: 14px;
+    font-weight: 400;
+}
+.load{
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+.load1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 5px solid #ff3d00;
+    border-bottom: 5px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation{
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+}

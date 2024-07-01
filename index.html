@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&family=Playwrite+MX:wght@100..400&family=Recursive:slnt,wght,CASL,CRSV,MONO@-15,300..1000,0..1,1,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+      <main>
+        <section class="game" id="game">
+            <header>
+                <img src="./Images/imgae1.png" class="w-100" alt="">
+            </header>
+            <nav class="navbar mb-4 navbar-expand-lg">
+                <div class="container">
+                  <span class="navbar-brand text-light mb-0 h1">
+                    <img src="./Images/imgae2.png" width="50" height="50" alt="Game">
+                    game Review
+                  </span>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-collapse collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav catagory-select" >
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase text-light active" aria-current="page" name="mmorpg"  id="mmorpg" href="#">mmorpg</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase text-light" name="shooter" id="shooter" href="#">shooter</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase text-light" id="sailing"  href="#">sailing</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase text-light" id="permadeath" href="#">permadeath</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase text-light" id="superhero" href="#">superhero</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase text-light" id="pixel" href="#">pixel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div class="container mt-5">
+                <div class="row " id="games">
+
+                </div>
+            </div>
+        </section>
+        <section class="d-none  details" id="details">
+            <div class="container ">
+                <header class="d-flex closse justify-content-between align-items-center">
+                    <h1 class="py-5 text-light">Details Game</h1>
+                    <button class="btn-close btn-Close1 btn-close-white"></button>
+                </header>
+                <div class="row overflow-hidden  " id="thedetails">
+ 
+                </div>
+            </div>
+        </section>
+      </main>
+      <div class="load d-none">
+        <span class="load1"></span>
+     </div>
+    <script type="module" src="./JS/index.js"></script>
+</body>
+</html>
